@@ -1,0 +1,43 @@
+.buttonC {
+  box-sizing: border-box;
+  height: 32px;
+  background: #fff;
+  border: 1px solid rgba(153, 153, 153, 1);
+  border-radius: 4px;
+  padding: 4px 1em;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonC > .circle {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+  opacity: 0.5;
+  display: inline-block;
+  animation: 0.7s big forwards;
+  position: absolute;
+  z-index: 0;
+}
+
+.buttonC > .value {
+  position: relative;
+  z-index: 1;
+}
+
+.buttonC:focus {
+  outline: none;
+  border-color: blue;
+}
+
+@keyframes big {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(10);
+  }
+}
